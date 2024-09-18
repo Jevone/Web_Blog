@@ -8,7 +8,7 @@ Route::get('/', function () {
 
 
 Route::get('/about', function () {
-    return view('about', ['nama' => 'Jefri Jaya']);
+    return view('about', ['name' => 'Jefri Jaya', 'title' => 'About']);
 });
 
 Route::get('/blog', function(){
@@ -16,5 +16,5 @@ Route::get('/blog', function(){
 });
 
 Route::get('/contact', function() {
-    return view('contact');
+    return view('contact', ['title' => 'Contact']);
 });
